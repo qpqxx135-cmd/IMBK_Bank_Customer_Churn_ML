@@ -44,6 +44,9 @@
 - LightGBM
 - GradientBoosting
 - RandomForest
+<img src="auto.png" width="700">
+
+
 
 ### 2) Hyperparameter Tuning (Optuna)
 각 모델별 최적 파라미터 탐색
