@@ -1,0 +1,19 @@
+# 고객 이탈 분류 ML 및 인사이트 분석
+
+## 📌 프로젝트 개요
+- Git Repo: IMBK_Bank_Customer_Churn_ML
+- 기간: 2026-04-10
+- 데이터: Kaggle Bank Customer Churn Dataset
+
+## 🛠 기술 스택
+- pandas, numpy
+- sklearn
+- lightgbm
+- shap
+
+## 📊 분석 흐름
+1. 데이터 전처리
+2. EDA
+3. 모델링 (AutoML / Stacking)
+4. SHAP 분석
+5. 인사이트 도출
