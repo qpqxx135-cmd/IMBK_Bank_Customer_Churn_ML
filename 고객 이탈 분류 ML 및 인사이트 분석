@@ -1,19 +1,76 @@
-# 고객 이탈 분류 ML 및 인사이트 분석
+# IMBK Bank Customer Churn ML
 
-## 📌 프로젝트 개요
-- Git Repo: IMBK_Bank_Customer_Churn_ML
-- 기간: 2026-04-10
-- 데이터: Kaggle Bank Customer Churn Dataset
+## 1. 프로젝트명
+고객 이탈 분류 ML 및 인사이트 분석
 
-## 🛠 기술 스택
-- pandas, numpy
-- sklearn
-- lightgbm
-- shap
+## 2. 기간
+2026년 4월 10일
 
-## 📊 분석 흐름
-1. 데이터 전처리
-2. EDA
-3. 모델링 (AutoML / Stacking)
-4. SHAP 분석
-5. 인사이트 도출
+## 3. 기술 스택
+- Python
+- Pandas, Numpy
+- Scikit-learn
+- LightGBM
+- Optuna
+- SHAP
+
+## 4. 데이터 출처
+- Kaggle Bank Customer Churn Dataset  
+- row: 10000 / col: 12
+
+---
+
+## 5. 데이터 전처리
+- customer_id 제거 (단순 식별자)
+- country, gender Label Encoding
+- 데이터 분할 (train / valid, stratify 적용)
+
+---
+
+## 6. EDA 및 해석
+- churn 비율 약 20% → 클래스 불균형 존재
+- Female 고객의 churn 비율이 더 높음
+- Germany 지역 churn 비율이 높게 나타남
+
+👉 따라서 Accuracy보다 F1-score를 주요 평가 지표로 사용
+
+---
+
+## 7. 모델링 과정
+
+### 1) AutoML (PyCaret)
+상위 모델 선정
+- AdaBoost
+- LightGBM
+- GradientBoosting
+- RandomForest
+
+### 2) Hyperparameter Tuning (Optuna)
+각 모델별 최적 파라미터 탐색
+
+### 3) 최종 모델
+- GradientBoostingClassifier
+- F1-score ≈ 0.603
+
+### 4) Stacking Model
+- F1-score ≈ 0.602
+- Accuracy ≈ 0.868
+
+👉 단일 모델과 유사한 성능
+
+---
+
+## 8. 인사이트 제안
+
+- active_member가 높은 고객은 churn 확률이 낮음 → 핵심 유지 대상
+- 일부 고객군에서 age, products_number가 churn에 영향
+- 활동성이 낮은 고객을 중심으로 관리 전략 필요
+
+👉 타겟 마케팅 및 고객 유지 전략 수립 가능
+
+---
+
+## 9. Reference
+- Kaggle Dataset
+- Scikit-learn Documentation
+- SHAP Documentation
