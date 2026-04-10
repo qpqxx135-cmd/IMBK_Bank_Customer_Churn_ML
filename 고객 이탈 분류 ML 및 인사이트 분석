@@ -45,8 +45,7 @@
 - GradientBoosting
 - RandomForest
 
-<img src="auto.png" width="700">
-
+![auto](auto.png)
 
 
 ### 2) Hyperparameter Tuning (Optuna)
