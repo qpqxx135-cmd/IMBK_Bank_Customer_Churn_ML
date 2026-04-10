@@ -9,8 +9,12 @@
 ## 3. 기술 스택
 - Python
 - Pandas, Numpy
+- Seaborn
 - Scikit-learn
 - LightGBM
+- AdaBoost
+- Gradient Boositng
+- RandomForest
 - Optuna
 - SHAP
 
@@ -21,16 +25,19 @@
 ---
 
 ## 5. 데이터 전처리
+- 결측치 확인
 - customer_id 제거 (단순 식별자)
-- country, gender Label Encoding
+- country, gender Label Encoding (범주형 변수 인코딩)
 - 데이터 분할 (train / valid, stratify 적용)
 
 ---
 
 ## 6. EDA 및 해석
+- 고객 이탈 여부 분포확인
 - churn 비율 약 20% → 클래스 불균형 존재
 - Female 고객의 churn 비율이 더 높음
 - Germany 지역 churn 비율이 높게 나타남
+- 시각화를 통해 이탈 고객 특성 해석
 
 👉 따라서 Accuracy보다 F1-score를 주요 평가 지표로 사용
 
@@ -44,8 +51,6 @@
 - LightGBM
 - GradientBoosting
 - RandomForest
-
-
 
 ### 2) Hyperparameter Tuning (Optuna)
 각 모델별 최적 파라미터 탐색
