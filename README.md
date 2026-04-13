@@ -67,6 +67,8 @@
 
 ### 4) Stacking Model
 
+- 성능 출력
+  
 <img width="201" height="35" alt="Stacking Pipe" src="https://github.com/user-attachments/assets/d1eef43d-cb00-4fcd-818a-634ba13a95f2" />
 
 - F1-score ≈ 0.602
