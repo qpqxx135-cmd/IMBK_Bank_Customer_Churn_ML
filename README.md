@@ -39,7 +39,7 @@
 - Germany 지역 churn 비율이 높게 나타남
 - 시각화를 통해 이탈 고객 특성 해석
 
-👉 따라서 Accuracy보다 F1-score를 주요 평가 지표로 사용
+-> 따라서 Accuracy보다 F1-score를 주요 평가 지표로 사용
 
 ---
 
@@ -67,14 +67,14 @@
 
 ### 4) Stacking Model
 
-- 성능 출력
+#### 4-1) 성능 출력
   
 <img width="201" height="35" alt="Stacking Pipe" src="https://github.com/user-attachments/assets/d1eef43d-cb00-4fcd-818a-634ba13a95f2" />
 
 - F1-score ≈ 0.602
 - Accuracy ≈ 0.868
 
-👉 단일 모델과 유사한 성능
+-> 단일 모델과 유사한 성능
 
 ---
 
@@ -86,7 +86,7 @@
 - 일부 고객군에서 age, products_number가 churn에 영향
 - 활동성이 낮은 고객을 중심으로 관리 전략 필요
 
-👉 타겟 마케팅 및 고객 유지 전략 수립 가능
+-> 타겟 마케팅 및 고객 유지 전략 수립 가능
 
 ---
 
