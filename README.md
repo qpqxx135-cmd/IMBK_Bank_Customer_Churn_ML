@@ -46,6 +46,9 @@
 ## 7. 모델링 과정
 
 ### 1) AutoML (PyCaret)
+
+<img width="625" height="269" alt="auto" src="https://github.com/user-attachments/assets/08fcd7d2-6fd9-4b4f-8606-114853c2f337" />
+
 상위 모델 선정
 - AdaBoost
 - LightGBM
@@ -53,6 +56,9 @@
 - RandomForest
 
 ### 2) Hyperparameter Tuning (Optuna)
+
+<img width="173" height="63" alt="Hyperparameter Tuning" src="https://github.com/user-attachments/assets/85881f42-dc01-47aa-baee-b54777b25c2d" />
+
 각 모델별 최적 파라미터 탐색
 
 ### 3) 최종 모델
@@ -60,6 +66,9 @@
 - F1-score ≈ 0.603
 
 ### 4) Stacking Model
+
+<img width="201" height="35" alt="Stacking Pipe" src="https://github.com/user-attachments/assets/d1eef43d-cb00-4fcd-818a-634ba13a95f2" />
+
 - F1-score ≈ 0.602
 - Accuracy ≈ 0.868
 
@@ -67,7 +76,9 @@
 
 ---
 
-## 8. 인사이트 제안
+## 8. 인사이트 제안 - SHAP Value 해석
+
+<img width="629" height="439" alt=" Shap value" src="https://github.com/user-attachments/assets/1f8444e8-a244-4cb2-82de-37753dcc4d69" />
 
 - active_member가 높은 고객은 churn 확률이 낮음 → 핵심 유지 대상
 - 일부 고객군에서 age, products_number가 churn에 영향
@@ -83,10 +94,5 @@
 - SHAP Documentation
 
 
-<img width="625" height="269" alt="auto" src="https://github.com/user-attachments/assets/08fcd7d2-6fd9-4b4f-8606-114853c2f337" />
 
-<img width="173" height="63" alt="Hyperparameter Tuning" src="https://github.com/user-attachments/assets/85881f42-dc01-47aa-baee-b54777b25c2d" />
 
-<img width="201" height="35" alt="Stacking Pipe" src="https://github.com/user-attachments/assets/d1eef43d-cb00-4fcd-818a-634ba13a95f2" />
-
-<img width="629" height="439" alt=" Shap value" src="https://github.com/user-attachments/assets/1f8444e8-a244-4cb2-82de-37753dcc4d69" />
