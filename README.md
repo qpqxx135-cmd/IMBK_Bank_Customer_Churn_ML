@@ -33,6 +33,15 @@
 ---
 
 ## 6. EDA 및 해석
+
+### 6-1) 상관관계 분석
+<img width="888" height="765" alt="스크린샷 2026-04-13 오전 10 12 20" src="https://github.com/user-attachments/assets/9142f05a-22c2-42ab-9a04-22e237f0abb5" />
+
+### 6-1) Box plot 분석
+
+<img width="976" height="481" alt="스크린샷 2026-04-13 오전 10 11 54" src="https://github.com/user-attachments/assets/d7cf0f35-d210-445f-be17-f31d0ffc6c13" />
+
+
 - 고객 이탈 여부 분포확인
 - churn 비율 약 20% → 클래스 불균형 존재
 - Female 고객의 churn 비율이 더 높음
